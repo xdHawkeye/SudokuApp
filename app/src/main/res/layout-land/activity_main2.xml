@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E272E"
+    tools:context=".view.MainActivity">
+
+    <com.example.sudoku.view.custom.SudokuBoardView
+        android:id="@+id/SudokuBoardView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonsLayout" />
+
+    <GridLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="50dp"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/onebutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="1"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/twobutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="2"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/threebutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="3"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/fourbutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="4"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/fivebutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="5"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/sixbutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="6"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/sevenbutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="7"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/eightbutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="8"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/ninebutton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="9"
+            android:textSize="48sp" />
+
+    </GridLayout>
+
+</RelativeLayout>

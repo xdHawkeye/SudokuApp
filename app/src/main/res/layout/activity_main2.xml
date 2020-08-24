@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141a1f"
+    tools:context=".view.MainActivity">
+
+    <com.example.sudoku.view.custom.SudokuBoardView
+        android:id="@+id/SudokuBoardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonsLayout" />
+
+    <GridLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:columnCount="9"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/onebutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:insetRight="-10dp"
+            android:text="1"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/twobutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:forceHasOverlappingRendering="true"
+            android:insetRight="-10dp"
+            android:text="2"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/threebutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:insetRight="-10dp"
+            android:text="3"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/fourbutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:insetRight="-10dp"
+            android:text="4"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/fivebutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:insetRight="-10dp"
+            android:text="5"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/sixbutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:insetRight="-10dp"
+            android:text="6"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/sevenbutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:insetRight="-10dp"
+            android:text="7"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/eightbutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:insetRight="-10dp"
+            android:text="8"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/ninebutton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:insetRight="-10dp"
+            android:text="9"
+            android:textColor="#ffd32a"
+            android:textSize="36sp" />
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/notesButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:contentDescription="TODO" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:onClick="nextActivity"
+        app:backgroundTint="#00FFFFFF"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:srcCompat="@color/cardview_shadow_end_color" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="textShow"
+        app:srcCompat="@drawable/sudoku_solver" />
+
+</RelativeLayout>
